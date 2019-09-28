@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<HTML>
+
+	<HEAD>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- A biblioteca bundle já contem os arquivos JS do Bootstrap, Popper, e jQuery.
+<script src="js/bootstrap.bundle.js"></script>-->
+		<title>FTT EC LP2 N1!!</title>
+		<LINK REL="stylesheet" HREF="css/bootstrap.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			  rel="stylesheet">
+		<STYLE>
+			body {
+				background: black;
+				color: white;
+			}
+			.center-txt {
+				text-align: center;
+				color: black;
+				width: 90px;
+				padding: 4px;
+				margin:0;
+				border:0;
+			}
+			.button-selected {
+				background-color: #343a40;
+				color: white;
+				border-radius: 15px;
+			}       
+			.width-button-bar {
+				text-align: center;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				margin-right: 0;
+				margin-left: 0;
+
+			}
+			.bottom-button-bar {
+				margin:0;
+				padding:0;
+				border:0;
+				width: 100%;
+			}
+			.icon-font {
+				font-size: 40px;   
+			}
+			main {
+				padding-top: 56px;
+				padding-bottom: 50px;
+			}
+
+			.carta{
+				background: red;
+				border-radius: 25px;
+			}
+			.imgCarta{
+				background: black;
+				margin: 2%;
+			}
+			.conteudo{
+				margin-top: 2%;
+				margin-left: 25%;
+			}
+
+			.btnNav{
+				margin-top: 15%;
+			}
+
+			/*----search----*/
+
+			.searchbar{
+				margin-bottom: auto;
+				margin-top: auto;
+				height: 60px;
+				background-color: #353b48;
+				border-radius: 30px;
+				padding: 10px;
+			}
+
+			.search_input{
+				color: white;
+				border: 0;
+				outline: 0;
+				background: none;
+				width: 0;
+				caret-color:transparent;
+				line-height: 40px;
+				transition: width 0.4s linear;
+			}
+
+			.searchbar:hover > .search_input{
+				padding: 0 10px;
+				width: 450px;
+				caret-color:red;
+				transition: width 0.4s linear;
+			}
+
+			.searchbar:hover > .search_icon{
+				background: white;
+				color: #e74c3c;
+			}
+
+			.search_icon{
+				height: 40px;
+				width: 40px;
+				float: right;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				color:white;
+			}
+		</STYLE>
+		<SCRIPT>
+
+
+
+		</SCRIPT>
+	</HEAD>
+
+	<BODY lang="pt-br">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<a class="navbar-brand" href="#">&#x1F981; FTT EC LP2 N1!!!</a>
+
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+				<div class="navbar-nav float-right text-right pr-3">
+					<a class="nav-item nav-link" href="index.html">Splash</a>
+					<a class="nav-item nav-link" href="http://www.fundacaosalvadorarena.org.br/" target="newpage">CEFSA</a>
+					<a class="nav-item nav-link" href="about.html">Sobre</a>
+				</div>
+			</div>
+		</nav>
+
+		<main class="container" id="aluno">
+			<div class="text-center">
+				<img src="img/Pokemonlogo.png" style="width: 20%"/>
+
+				<div class="row conteudo">
+					<div class="col-md-2 btnNav">
+						<button class="btn btn-primary" id="btnPrevius">
+							<i class="material-icons">
+								keyboard_arrow_left
+							</i>
+						</button>
+					</div>
+					<div class="col-md-4">
+						<div class="carta">
+							<span id="pokeNome"></span>
+							<div class="imgCarta">
+								<img src="" id="imgPoke" style = 'width: 150px'/>
+							</div>
+							<div>
+								Type: <span id="pokeTypes"></span><br/>
+								Abilities: <span id="pokeAbilities"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 btnNav">
+						<button class="btn btn-primary" id="btnNext">
+							<i class="material-icons">
+								keyboard_arrow_right
+							</i>
+						</button>
+					</div>
+				</div>
+				<br/>
+				<div class="container h-100">
+					<div class="d-flex justify-content-center h-100">
+						<div class="searchbar">
+							<input class="search_input" id="textSearch" type="text" name="" placeholder="Search...">
+							<a href="#" class="search_icon" id="btnSearch"><i class="material-icons">search</i></a>
+						</div>
+					</div>
+				</div>
+			</div>    
+		</main>
+
+		<nav class="navbar fixed-bottom navbar-light bg-light width-button-bar">
+			<div class="row w-100 bottom-button-bar">
+				<div class="col-sm center-txt"><b onclick='window.location="tab01news.html"'>News<br><span class="icon-font">&#x1f4f0;</span></b>
+				</div>
+				<div class="col-sm center-txt"><b onclick='window.location="tab02map.html"'>Map<br><span class="icon-font">&#x1f4cc;</span></b>
+				</div>
+				<div class="col-sm center-txt"><b onclick='window.location="tab03todo.html"'>Todo<br><span class="icon-font">&#x1F4DD;</span></b>
+				</div>
+				<div class="col-sm center-txt button-selected"><b onclick='window.location="tab04project.html"'>PokéSearch<br>
+					<img src="img/pokeball.png" style="width: 30%; margin-top: -4%"></b>
+				</div>
+			</div>
+		</nav>
+	</BODY>
+	<!-- carga de scripts do Bootstrap, JQuery, Popper -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script>
+		var Id = 1;
+		$(document).ready(function (){
+			getPokemon(Id);
+		});
+		$("#btnNext").click(function(){
+			Id ++;
+			getPokemon(Id);
+		});
+		$("#btnPrevius").click(function(){
+			Id--;
+			if(Id <= 0)
+				Id= 1;
+			getPokemon(Id);
+		});  
+		$("#btnSearch").click(async function(){
+			var pokename = $("#textSearch").val();
+			var pokemon = await getPokemon(pokename);
+			Id= pokemon.id;            
+		});
+		async function getPokemon(id){
+			var url = "https://pokeapi.co/api/v2/pokemon/" + id;
+			var pokemon = await fetch(url).then(resposta=> resposta.json());
+			$("#pokeNome").html(pokemon.name);
+			$("#imgPoke").attr("src", pokemon.sprites.front_default);
+			var types = [];
+			pokemon.types.forEach(function(item, i){
+				types.push(item.type.name);                
+			})
+			$("#pokeTypes").html(types.join(','));
+			var abilities = [];
+			pokemon.abilities.forEach(function(item, i){
+				abilities.push(item.ability.name);                
+			})
+			$("#pokeAbilities").html(abilities.join(','));
+			return pokemon;
+		}
+	</script>
+</HTML>
